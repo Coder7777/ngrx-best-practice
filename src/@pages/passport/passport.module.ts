@@ -1,25 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PassportComponent } from './containers/passport/passport.component';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { CaptchaComponent, PasswordComponent, UserCenterComponent } from './components';
-import { PassportRoutes } from './passport.routing';
+import { PassportComponent, CaptchaComponent, PasswordComponent, UserCenterComponent } from './index';
+import { PassportRoutesModule } from './passport.routing';
 
 const components = [
+  PassportComponent,
   PasswordComponent,
   CaptchaComponent,
-  UserCenterComponent,
-  PassportComponent
+  UserCenterComponent
 ]
 
 const modules = [
   CommonModule,
   FormsModule,
   IonicModule,
-  PassportRoutes
+  PassportRoutesModule
 ]
-
 
 @NgModule({
   declarations: [...components],

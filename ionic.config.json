@@ -1,5 +1,7 @@
 {
   "name": "ngrx-best-practice",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

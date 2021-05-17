@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-password',
@@ -8,7 +8,12 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 })
 export class PasswordComponent implements OnInit {
 
-  constructor() { }
+  changeDetectiion: string = "Hello World - 0";
+  count: number = 0;
+
+  constructor(
+    private cdr: ChangeDetectorRef
+  ) { }
 
   ngOnInit() {
   }

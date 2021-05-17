@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { TodoItemInfo } from 'src/@share/models/todo/index';
 
 @Component({
   selector: 'app-todo-item',
@@ -7,6 +8,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TodoItemComponent implements OnInit {
+
+  @Input("item") todoItemInfo: TodoItemInfo;
 
   constructor() { }
 

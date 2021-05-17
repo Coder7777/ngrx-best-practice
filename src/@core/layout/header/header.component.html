@@ -1,0 +1,21 @@
+<ion-header *ngIf="headerInfo?.isVisible">
+  <ion-toolbar>
+
+    <ion-buttons [slot]="startButton.position">
+      <ion-button>
+        <ion-icon slot="start" [name]="startButton.icon"></ion-icon>
+        {{startButton.text}}
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>{{headerInfo?.title}}</ion-title>
+
+    <ion-buttons [slot]="endButton.position">
+      <ion-button>
+        <ion-icon slot="end" [name]="endButton.icon"></ion-icon>
+        {{endButton.text}}
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>

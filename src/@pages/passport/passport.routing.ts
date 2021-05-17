@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { CaptchaComponent, PasswordComponent, UserCenterComponent } from './components';
+import { CaptchaComponent, PasswordComponent, UserCenterComponent } from './index';
 
 const routes: Routes = [
   { path: "captcha", component: CaptchaComponent },
@@ -8,4 +8,4 @@ const routes: Routes = [
   { path: "", redirectTo: "password", pathMatch: "full" }
 ];
 
-export const PassportRoutes = RouterModule.forChild(routes);
+export const PassportRoutesModule = RouterModule.forChild(routes);
